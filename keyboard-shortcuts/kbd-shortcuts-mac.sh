@@ -164,6 +164,13 @@ cat > /tmp/trv_data.csv << 'TRVDATA'
 "def-balloon","On or before the end of the agreed upon term, we'll pay you the remainder of what is owed on the property in a single \"balloon\" payment."
 "def-terms","Terms refers to a arrangement where instead of paying all cash upfront, we make regular payments to you over time. This often allows us to pay you more overall while giving you consistent income. We can structure these terms to fit your specific needs, whether that's monthly payments, a larger down payment, or a specific payoff timeline."
 "send-email-offer","I'd love to do that; unfortunately it's company policy that we can't just leave open offers floating out there. We are looking at dozens of houses every day. Therefore, I am required to send you the written offer and review it TOGETHER to make sure that I can answer all of your questions and make sure you are 100% comfortable with everything."
+"fu-30d","I understand that you want to think about it. I'll follow up with you in 30 days. Is that okay?"
+"fu-30d-y","Great! I'll check back with you in 30 days. If you have any questions in the meantime, feel free to reach out."
+"fu-30d-n","I understand. If you change your mind, please feel free to reach out to me."
+"greet-seller","Hello [name]! My name is [my-name]."
+"referral","Do you know anyone who is looking to sell their house? I can pay you $1000 for a referral when I purchase their home."
+"buy-box-cash","I buy houses in [city, state] and the surrounding areas. If you have a house that needs repairs or a remodel, I can pay cash and close quickly. No need for any repairs, clean out, or showings. I buy as-is."
+"buy-box-cf","I buy houses in [city, state] and the surrounding areas. I can pay full price for turn key homes and I'm flexible with the closing. No need for any repairs, clean out, or showings. I buy as-is."
 TRVDATA
 
 # Count new items
