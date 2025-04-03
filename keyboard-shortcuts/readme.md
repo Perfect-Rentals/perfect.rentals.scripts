@@ -28,7 +28,7 @@ Also, this script removes the tedious task of entering each text replacement sho
 
 ## Installing Keyboard Shortcuts
 
-> **Warning: To avoid duplication, this script will backup and overwrite any existing text replacements / keyboard shortcuts that currently exist.**
+> **Warning: To avoid duplication, this script will backup and overwrite any existing text replacements / keyboard shortcuts that currently exist. To be safe, consider [adding](#add) any custom keyboard shortcuts you already have added before continuing.**
 
 1. Download and save the [./kbd-shortcuts-mac.sh](#download "Download") file.
 
