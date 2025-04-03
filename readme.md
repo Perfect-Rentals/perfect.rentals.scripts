@@ -4,4 +4,4 @@ A collection of automation scripts by Perfect Rentals for seller lead generation
 
 ## Keyboard Shortcuts (MacOS)
 
-A collection of keyboard shortcuts to install on your Mac computer for real estate lead generation. See [kbd-shortcuts-mac](./kbd-shortcuts-mac).
+A collection of keyboard shortcuts to install on your Mac computer for real estate lead generation. See [kbd-shortcuts](./kbd-shortcuts).
