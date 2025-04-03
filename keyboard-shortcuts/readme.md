@@ -90,7 +90,7 @@ If the shortcut was replaced, then congratulations, it worked! You can now use [
 
 > **Note:** Any text in [brackets] should be manually replaced with the appropriate text before use.
 
-<h2 id="mod">Modifying Custom Keyboard Shortcuts</h2>
+<h2 id="mod">Modifying Keyboard Shortcuts</h2>
 
 If you want to modify any of the keyboard shortcuts, you can do so by editing the `kbd-shortcuts-mac.sh` file. Open the file in a text editor and look for the line that contains the shortcut you want to modify. For example:
 
@@ -112,24 +112,39 @@ To change the text replacement, simply change the text in the second column. For
 
 > **Note:** If you change the shortcut or the text replacement, you will need to run the script again to install the new shortcut. The script will overwrite any existing shortcuts with the new ones.
 
-<h2 id="add">Adding Custom Keyboard Shortcuts</h2>
+<h2 id="add">Adding Keyboard Shortcuts</h2>
 
 If you want to add your own custom keyboard shortcuts, you can do so by editing the `kbd-shortcuts-mac.sh` file. Open the file in a text editor. Find the the text `TRVDATA` that _exists on a single line_ (second instance). Add a new line before this word, then add your shortcut on the new line.
 
-1. `CMD+F` to find the text `TRVDATA` (it'll be the second instance of this text)
-2. Add a new line _before_ this text
-3. Add your shortcut, one or more, each on the new line. For example:
+1. `⌘+F` to find the text `TRVDATA` (it'll be the second instance of this text)
+2. Add a new line **\_before**\_ this text
+3. Add your shortcut, one or more, each on a new line.
 
 ```text
-"greet-seller","Hello [name]! My name is [my-name]."
-"get-phone","What's your phone number?"
 "get-email","What's your email address?"
-"get-addr","What's the property address?"
+"hmw","How much wood could a woodchuck chuck if a woodchuck could chuck wood?"
 ```
 
 4. Save the file
 5. [Run the script again](#run) to install the new shortcuts
 6. [Test the new shortcuts](#test) by typing them in a text editor or messaging app.
+
+> **Important Note**
+> Syntax is important! Failure to follow the syntax rules will cause the script to fail. The syntax is as follows:
+
+```text
+"shortcut","replacement"
+```
+
+Rules:
+
+- The first item in double quotes is the `shortcut` value
+- The second item in double quotes is the `replacement` value
+- There must have a `comma` between shortcut value and replacement value
+- There must be a shortcut value and a replacement value
+- There must be a new line for each shortcut
+- You must use double quotes around the shortcut and replacement values
+- The last line must be the `TRVDATA` text
 
 <h2 id="manual">Manual Setup (Tedious but Simple)</h2>
 
