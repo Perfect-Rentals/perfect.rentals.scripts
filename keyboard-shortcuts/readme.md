@@ -1,12 +1,10 @@
-# Perfect Rentals | Keyboard Shortcuts (Text Replacements)
+<h1 id="top">Perfect Rentals | Keyboard Shortcuts (Text Replacements)</h1>
 
-Collection of `bash` scripts to manage (delete and enter) keyboard shortcuts (aka. Text Replacements) for your Mac computer for seller lead generation. The script will delete and replace all your shortcuts with a [collection of real estate lead generation shortcuts](#text-replacement--keyboard-shortcuts-reference-reference).
-
-## Why do I want this?
+This is a script to install a collection of `bash` scripts to manage (delete and enter) keyboard shortcuts (aka. Text Replacements) for your Mac computer for seller lead generation. The script will replace all your shortcuts with a [collection of real estate lead generation shortcuts](#reference).
 
 <h2 id="why">Why do I want this?</h2>
 
-When talking to seller leads, realtors, or any marketing target, you will frequently ask the same questions to your audience via your preferred messaging app:
+When talking to seller leads, realtors, or any sales and marketing audience, you will frequently ask the same questions or write the same content to your audience. For example, when you are talking to a seller lead, you may ask the same questions over and over again:
 
 - What is the property address?
 - Why are you selling?
@@ -30,14 +28,15 @@ Also, this script removes the tedious task of entering each text replacement sho
 
 <h2 id="install">Installing Keyboard Shortcuts by Script</h2>
 
-> **Warning: To avoid duplication of shortcuts in your computer, this script will first backup and then overwrite any existing text replacements / keyboard shortcuts that currently exist. To be safe, consider [adding](#add) any custom keyboard shortcuts you already have added before continuing. You can always [check your backup file](#backups) if you think you lost shortcut data.**
+> **Warning: To avoid duplication of shortcuts in your computer, this script will first backup and then overwrite any existing text replacements / keyboard shortcuts that currently exist. To be safe, consider [adding](#add) any custom keyboard shortcuts you already have added before continuing. It will back up the shortcuts on your local computer when it runs, so you can always [check your backup file](#backups) if you think you lost data.**
 
-1. Download and save the [./kbd-shortcuts-mac.sh](#download "Download") file.
+1. Download and save the [./kbd-shortcuts-mac.sh](./kbd-shortcuts-mac.sh) file to your Mac.
 
-> I'll assume you downloaded it to the `downloads` folder for the remainder of the instructions.
+> **Note**: I'll assume you downloaded it to the `downloads` folder for the remainder of the instructions.
+> **Note**: Windows is not supported at this time.
 
-2. Open a new Mac terminal window (Launchpad > Terminal).
-3. In the terminal app, type (or copy & paste) the commands below to find the file in your `downloads` folder. If you saved it elsewhere `cd` into that folder.
+1. Open a new Mac terminal window (**Launchpad** → **Terminal**).
+2. In the terminal app, type (or copy & paste) the commands below to find the file in your `downloads` folder. If you saved it elsewhere `cd` into that folder.
 
 ```bash
 cd ~/downloads
@@ -52,18 +51,18 @@ You should see the `kbd-shortcuts-mac.sh` file listed.
 chmod +x kbd-shortcuts.sh
 ```
 
-### <h3 id="run">Running the script</h3>
+<h3 id="run">Running the script</h3>
 
 5. Run the script from the terminal
 
 ```bash
-./text_replacement_manager.sh
+./kbd-shortcuts-mac.sh
 ```
 
-> If you get a message that you do not have permissions try typing `sudo` first. You will be prompted for your password to continue.
+> If you get a message that you do not have permissions try typing `sudo` first. You will likely be prompted for your computer's password to continue.
 
 ```bash
-sudo ./text_replacement_manager.sh
+sudo ./kbd-shortcuts-mac.sh
 ```
 
 6. The message below will appear in the terminal window. Confirm `Y` to continue or `N` to cancel.
@@ -89,7 +88,7 @@ You should see that the text was replaced with
 
 If the shortcut was replaced, then congratulations, it worked! You can now use [any of the keyboard shortcuts that were installed](#reference).
 
-> **Note:** Any text in [brackets] should be manually replaced before use.
+> **Note:** Any text in [brackets] should be manually replaced with the appropriate text before use.
 
 <h2 id="mod">Modifying Custom Keyboard Shortcuts</h2>
 
@@ -115,7 +114,7 @@ To change the text replacement, simply change the text in the second column. For
 
 <h2 id="add">Adding Custom Keyboard Shortcuts</h2>
 
-If you want to add your own custom keyboard shortcuts, you can do so by editing the `kbd-shortcuts-mac.sh` file. Open the file in a text editor. Find the the text `TRVDATA` that exists on a single line. Add a new line before this word, then add your shortcut on the new line. For example:
+If you want to add your own custom keyboard shortcuts, you can do so by editing the `kbd-shortcuts-mac.sh` file. Open the file in a text editor. Find the the text `TRVDATA` that _exists on a single line_ (second instance). Add a new line before this word, then add your shortcut on the new line.
 
 1. `CMD+F` to find the text `TRVDATA` (it'll be the second instance of this text)
 2. Add a new line _before_ this text
@@ -144,8 +143,8 @@ Your Mac computer allows you to add your own text replacements (keyboard shortcu
 
 > Note: Installing the script will overwrite any custom keyboard shortcuts added this way.
 >
-> - If you want to add your own custom shortcuts together with the script, see [Adding Custom Keyboard Shortcuts](#kbd-shortcuts-add).
-> - If you want to modify any shortcut, see [Modifying Custom Keyboard Shortcuts](#kbd-shortcuts-mod).
+> - If you want to add your own custom shortcuts together with the script, see [Adding Custom Keyboard Shortcuts](#add).
+> - If you want to modify any shortcut, see [Modifying Custom Keyboard Shortcuts](#mod).
 
 <h2 id="backups">Backups</h2>
 
