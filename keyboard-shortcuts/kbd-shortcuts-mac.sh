@@ -12,14 +12,14 @@ OUTPUT_PLIST="${PLIST_DIR}/combined.plist"
 
 # Function to display usage information
 show_usage() {
-    echo "Usage: $0 [file1.csv file2.csv ...]"
-    echo "If no files are specified, all CSV files in the ./csv directory will be used."
+    echo -e "Usage: $0 [file1.csv file2.csv ...]"
+    echo -e "If no files are specified, all CSV files in the ./csv directory will be used."
     exit 1
 }
 
 # Function to combine CSV files
 combine_csv_files() {
-    echo "Combining CSV files..."
+    echo -e "\nCombining CSV files..."
     
     # Ensure csv directory exists
     mkdir -p "$CSV_DIR"
@@ -30,7 +30,7 @@ combine_csv_files() {
     # Combine all CSV files provided as arguments
     for file in "$@"; do
         if [ ! -f "$file" ]; then
-            echo "Warning: File not found: $file (skipping)"
+            echo -e "Warning: File not found: $file (skipping)"
             continue
         fi
         
@@ -44,22 +44,22 @@ combine_csv_files() {
     
     # Validate combined CSV file
     if [ ! -s "$COMBINED_CSV" ]; then
-        echo "Error: No valid data found in input files"
+        echo -e "Error: No valid data found in input files"
         exit 1
     fi
     
     # Check if the CSV has at least 2 columns
     if [ $(head -n 1 "$COMBINED_CSV" | awk -F, '{print NF}') -lt 2 ]; then
-        echo "Error: CSV file must have at least 2 columns"
+        echo -e "Error: CSV file must have at least 2 columns"
         exit 1
     fi
     
-    echo "Combined $(wc -l < "$COMBINED_CSV") lines from $# files"
+    echo -e "  Combined $(wc -l < "$COMBINED_CSV") text replacements from $# files"
 }
 
 # Function to convert CSV to plist
 csv2plist() {
-    echo "Converting CSV to plist format..."
+    echo -e "\nConverting CSV to plist format..."
     
     # Ensure plist directory exists
     mkdir -p "$PLIST_DIR"
@@ -117,18 +117,60 @@ csv2plist() {
     
     # Validate the plist
     if ! plutil -lint "$OUTPUT_PLIST" > /dev/null 2>&1; then
-        echo "Error: Generated plist is not valid"
+        echo -e "Error: Generated plist is not valid"
         exit 1
     fi
     
-    echo "Successfully created plist with $(grep -c "<dict>" "$OUTPUT_PLIST") entries"
+    echo -e "  Successfully created plist file with $(grep -c "<dict>" "$OUTPUT_PLIST") text replacements"
+}
+
+# Function to import plist into macOS
+import_plist() {
+    echo -e "\nImporting plist into macOS..."
+    import_success=false
+    
+    # Check if the plist file exists
+    if [ ! -f "$OUTPUT_PLIST" ]; then
+        echo -e "Error: Plist file not found: $OUTPUT_PLIST"
+        return 1
+    fi
+    
+    # Try different import methods
+    if defaults import -g NSUserDictionaryReplacementItems "$OUTPUT_PLIST" 2>/dev/null; then
+        echo -e "  Imported text replacements successfully"
+        import_success=true
+    elif sudo defaults import -g NSUserDictionaryReplacementItems "$OUTPUT_PLIST" 2>/dev/null; then
+        echo -e "  Imported text replacements successfully using sudo"
+        import_success=true
+    else
+        echo -e "  Error: Failed to import plist into macOS"
+        return 1
+    fi
+    
+    return 0
 }
 
 # Function to clean up temporary files
 cleanup() {
-    echo "Cleaning up temporary files..."
+    echo -e "\nCleaning up temporary files..."
     # We're keeping the final files, just removing the combined CSV
     rm -f "$COMBINED_CSV"
+    # report_results $?
+    echo -e "  done."
+}
+
+# function to report results
+report_results() {
+    echo -e "\n==============================="
+    if [ $1 -eq 0 ]; then
+        echo -e "Text Replacements imported successfully!"
+    else
+        echo -e "Text Replacements import failed! You will need to manually import the plist file."
+    fi
+    echo -e "==============================="
+    echo -e "\nPlist file created: $OUTPUT_PLIST"
+    echo -e "\nTo import manually:"
+    echo -e "Drag and drop this file into System Settings > Keyboard > Text Replacements"
 }
 
 # Main function
@@ -144,7 +186,7 @@ main() {
         # Use all CSV files in the CSV directory
         INPUT_FILES=($(ls ${CSV_DIR}/*.csv 2>/dev/null))
         if [ ${#INPUT_FILES[@]} -eq 0 ]; then
-            echo "Error: No CSV files found in $CSV_DIR directory"
+            echo -e "Error: No CSV files found in $CSV_DIR directory"
             show_usage
         fi
     fi
@@ -154,12 +196,18 @@ main() {
     
     # Convert CSV to plist
     csv2plist
-    
-    echo "Plist file created: $OUTPUT_PLIST"
-    echo ""
-    echo "To import, either:"
-    echo "1. Drag and drop this file into System Settings > Keyboard > Text Replacements"
-    echo "2. Or use: defaults import -g NSUserDictionaryReplacementItems \"$OUTPUT_PLIST\""
+
+    # Try to import plist text replacements into macOS
+    # import_plist
+    # import_result=$?
+    # echo -e "  $import_result failures from import."
+
+    # Report results
+    report_results $?
+
+    # Cleanup temporary files
+    cleanup
+    echo -e "  done."
 }
 
 # Run the main function
