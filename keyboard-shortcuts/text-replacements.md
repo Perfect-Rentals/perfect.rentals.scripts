@@ -1,12 +1,11 @@
 # Text Replacement / Keyboard Shortcuts Reference
 
-| Shortcut       | Replacement Text                    |
-| -------------- | ----------------------------------- |
-| `omw`          | On my way                           |
-| `chnage`       | change                              |
-| `idk`          | I don't know                        |
-| `tmrw`         | tomorrow                            |
-| `greet-seller` | Hello [name]! My name is [my-name]. |
+| Shortcut | Replacement Text |
+| -------- | ---------------- |
+| `omw`    | On my way        |
+| `chnage` | change           |
+| `idk`    | I don't know     |
+| `tmrw`   | tomorrow         |
 
 ## Marketing & Outreach Scripts
 
@@ -16,7 +15,7 @@
 | `buy-box-cash`  | I buy fixer-upper houses in [city, state] and the surrounding areas. I can pay cash and close quickly. No need for any repairs, clean out, or showings.                                       |
 | `buy-box-terms` | I buy turn key houses in [city, state] and the surrounding areas. I can pay full price for turn key homes and I'm flexible with the closing. No need for any repairs, clean out, or showings. |
 
-## Opening Script Questions
+## CFP Opening Script Questions
 
 | Shortcut            | Replacement Text                                                                                                                   |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,7 +35,7 @@
 | `osq9`              | What is the monthly mortgage payment?                                                                                              |
 | `osq10`             | If I were to pay you the [x] price, cover all the closing costs, fees, and buy it as is would you be open to terms?                |
 
-## Terms Scripts
+## CFP Terms Scripts
 
 | Shortcut             | Replacement Text                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,7 +44,7 @@
 | `osq10-cash-fixer`   | I understand that you're looking for a cash option. Since the house needs some repairs, we could explore an all-cash offer that allows you to sell quickly without making any fixes. If we were to pay all cash and close when you want, what's the least you would take for the property?                                                                                                                                                                                                                                                                                                                                  |
 | `osq10-cash-turnkey` | I understand that you're looking for a cash offer at full market value. Just so you know, when we pay cash, it's typically because the property needs a lot of work, and we're getting it at a discount. Since your home is in great condition, our seller finance option allows us to pay much more. This means you walk away with more money and avoid all the typical hassles. If cash at retail is your only option, you might be better off listing with a real estate agent to get that full market value. Would you be open to discussing how we could make this work on terms that might actually benefit you more? |
 
-## "Why" Responses (Objection Handlers)
+## "Why" Responses (Seller Objection Handlers)
 
 | Shortcut           | Replacement Text                                                                                                                                                                                                                       |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -62,7 +61,7 @@
 | `why-asking-price` | I want to make sure our offer is fair and meets your expectations, so it's helpful to know what you're looking for. Do you have a ballpark figure in mind?                                                                             |
 | `why-think`        | What part do you need to think about? Maybe I can help resolve any unanswered questions?                                                                                                                                               |
 
-## Closing Script Questions
+## CFP Closing Script Questions
 
 | Shortcut | Replacement Text                                                                                                                                                                                                                                                                                                                       |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -74,7 +73,7 @@
 | `csq6`   | What is the lowest monthly payment you could take? What's the lowest rate you would take? That monthly payment is going to go towards the balance of what I owe you, okay?                                                                                                                                                             |
 | `csq7`   | Does all of that make sense? If I buy your house at the [price] with [down payment] down and make the monthly payment of [monthly payment] does all of this work for you?                                                                                                                                                              |
 
-## "When" Responses (Concern Handlers)
+## "When" Responses (Seller Concern Handlers)
 
 | Shortcut             | Replacement Text                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -93,7 +92,7 @@
 | `def-terms`        | Terms refers to a arrangement where instead of paying all cash upfront, we make regular payments to you over time. This often allows us to pay you more overall while giving you consistent income. We can structure these terms to fit your specific needs, whether that's monthly payments, a larger down payment, or a specific payoff timeline.      |
 | `send-email-offer` | I'd love to do that; unfortunately it's company policy that we can't just leave open offers floating out there. We are looking at dozens of houses every day. Therefore, I am required to send you the written offer and review it TOGETHER to make sure that I can answer all of your questions and make sure you are 100% comfortable with everything. |
 
-## Follow-Up Responses
+## Seller Follow-Up Responses
 
 | Shortcut   | Replacement Text                                                                                               |
 | ---------- | -------------------------------------------------------------------------------------------------------------- |
