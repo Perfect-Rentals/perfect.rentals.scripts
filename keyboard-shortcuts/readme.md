@@ -187,21 +187,21 @@ To delete keyboard shortcuts from your Mac computer, follow these steps:
 
 <h2 id="Troubleshooting">Troubleshooting</h2>
 
-###### Shortcuts not appearing after import
+### Shortcuts not appearing after import
 
 After dragging and dropping the plist file into  → System Settings → Keyboard → Text Replacement you do not see the shortcuts
 
 1. Restart your applications (or entire computer) to ensure they recognize the new replacements (best solution).
 1. Check if you have too many replacements (macOS may have limits)
 
-###### Import errors
+### Import errors
 
 After dragging and dropping the plist file into  → System Settings → Keyboard → Text Replacement you see nothing has changed or you receive an error message.
 
 1. Ensure the plist file is valid by running the bash terminal command `plutil -lint ./plist/combined.plist`
 2. Reboot and try the drag-and-drop method again
 
-###### Duplicate Keyboard Shortcuts Exist
+### Duplicate Keyboard Shortcuts Exist
 
 After dragging and dropping the plist file into  → System Settings → Keyboard → Text Replacement you see duplicate keyboard shortcuts listed.
 
