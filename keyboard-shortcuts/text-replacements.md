@@ -1,13 +1,18 @@
 # Text Replacement / Keyboard Shortcuts Reference
 
+## Mac Default
+
+These are some default MacOS text replacement keyboard shortcuts.
+
 | Shortcut | Replacement Text |
 | -------- | ---------------- |
-| `omw`    | On my way        |
-| `chnage` | change           |
+| `omw`    | On my way!       |
 | `idk`    | I don't know     |
 | `tmrw`   | tomorrow         |
 
 ## Marketing & Outreach Scripts
+
+These are common text replacement keyboard shortcuts for marketing and outreach.
 
 | Shortcut        | Replacement Text                                                                                                                                                                              |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -16,6 +21,8 @@
 | `buy-box-terms` | I buy turn key houses in [city, state] and the surrounding areas. I can pay full price for turn key homes and I'm flexible with the closing. No need for any repairs, clean out, or showings. |
 
 ## CFP Opening Script Questions
+
+These are common text replacement keyboard shortcuts for the Creative Finance Playbook Opening Script questions.
 
 | Shortcut            | Replacement Text                                                                                                                   |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -37,6 +44,8 @@
 
 ## CFP Terms Scripts
 
+A collection of text replacement keyboard shortcuts for the Creative Finance Playbook Opening Script "Terms" questions, responses, and rebuttals.
+
 | Shortcut             | Replacement Text                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `osq10-terms`        | Let me explain how we can make this process incredibly simple and beneficial for you. We often buy homes by taking over existing payments or creating a payment plan that works for you. This means you get more money over time, without any hassle or fees – and we handle everything, so you don't have to lift a finger. You walk away with more cash in your pocket, no closing costs, and we take care of all the repairs and expenses. Would something like this work for you?                                                                                                                                       |
@@ -45,6 +54,8 @@
 | `osq10-cash-turnkey` | I understand that you're looking for a cash offer at full market value. Just so you know, when we pay cash, it's typically because the property needs a lot of work, and we're getting it at a discount. Since your home is in great condition, our seller finance option allows us to pay much more. This means you walk away with more money and avoid all the typical hassles. If cash at retail is your only option, you might be better off listing with a real estate agent to get that full market value. Would you be open to discussing how we could make this work on terms that might actually benefit you more? |
 
 ## "Why" Responses (Seller Objection Handlers)
+
+A collection of text replacement keyboard shortcuts for responding the common seller objections to answering questions.
 
 | Shortcut           | Replacement Text                                                                                                                                                                                                                       |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -63,6 +74,10 @@
 
 ## CFP Closing Script Questions
 
+The text replacement keyboard shortcuts for the Creative Finance Playbook Closing Script questions. Useful as a quck reference and for quickly recording responses in your perferred CRM.
+
+> **Note:** These are usually discussed via phone call, not texting, but great for digital note taking.
+
 | Shortcut | Replacement Text                                                                                                                                                                                                                                                                                                                       |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `csq1`   | Is now still a good time?                                                                                                                                                                                                                                                                                                              |
@@ -75,6 +90,8 @@
 
 ## "When" Responses (Seller Concern Handlers)
 
+A collection of text replacement keyboard shortcuts for responding to common seller concerns to seller financing and other purchase proposals.
+
 | Shortcut             | Replacement Text                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `when-default`       | For term agreements, we create what's called a "mortgage wrap" contract. That is a contract between us and you that says that if we fail to pay the mortgage, then you can take the property back from us. However, we've never had a late payment or a missed payment. In fact, we pay the mortgage company directly. We make sure that we pay using automated payments so that it automatically comes out of the account. We mostly pay 10 days before the due date just in case there's any issue with technology. |
@@ -83,7 +100,9 @@
 | `when-fail-to-pay`   | First, we do not want to lose money. If we fail to pay you, then we'll lose the house and all the money we've invested in it. Second, as part of the agreement, we'll put a "mortgage wrap" contract in place to protect us both. The property will be returned to you by executing a "deed in lieu of foreclosure."                                                                                                                                                                                                  |
 | `when-close`         | We can close as quickly as you want to. If you want to leave quickly, in general, it takes one month to close. The standard purchase and sale agreement contract has a 21 day due diligence period where we will have the property inspected and make sure everything is ready for close. If we continue with the purchase, that means we schedule a closing and that depends on how quickly the title company can get us booked. When would you like to close?                                                       |
 
-## Definitions and Other Responses
+## Definitions and Other Request Responses
+
+A collection of text replacement keyboard shortcuts generating responses to commonly asked definitions and other seller requests.
 
 | Shortcut           | Replacement Text                                                                                                                                                                                                                                                                                                                                         |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -93,6 +112,8 @@
 | `send-email-offer` | I'd love to do that; unfortunately it's company policy that we can't just leave open offers floating out there. We are looking at dozens of houses every day. Therefore, I am required to send you the written offer and review it TOGETHER to make sure that I can answer all of your questions and make sure you are 100% comfortable with everything. |
 
 ## Seller Follow-Up Responses
+
+For less motivated sellers, a collection of common text replacement keyboard shortcuts for periodic follow up.
 
 | Shortcut   | Replacement Text                                                                                               |
 | ---------- | -------------------------------------------------------------------------------------------------------------- |
