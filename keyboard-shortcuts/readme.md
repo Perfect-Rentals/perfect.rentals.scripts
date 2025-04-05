@@ -166,7 +166,7 @@ The script will:
 - Convert them to a plist file at `plist/combined.plist`
 - Show instructions for importing
 
-<h2 id="Advanced Usage">Advanced Usage</h2>
+<h3 id="Advanced Usage">Advanced Usage</h3>
 
 You can make and specify specific CSV files to process. In bash, you can specify the CSV files to process by passing them as arguments to the script. For example, if you want to combine the `mac_default.csv` and `my-new-kbd-shortcuts.csv` files, you would run the script like this:
 
