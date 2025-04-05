@@ -201,12 +201,13 @@ After dragging and dropping the plist file into  → System Settings → Keyb
 1. Ensure the plist file is valid by running the bash terminal command `plutil -lint ./plist/combined.plist`
 2. Reboot and try the drag-and-drop method again
 
-###### Duplicate Keyboard Shortcuts shown
+###### Duplicate Keyboard Shortcuts Exist
 
 After dragging and dropping the plist file into  → System Settings → Keyboard → Text Replacement you see duplicate keyboard shortcuts listed.
 
 1. If you drag and drop the same shortcut value twice, it will appear twice.
-2. Select the duplicate and press the minus (-) button to delete it. Hold the `option` key to delete all duplicates at once.
+
+See [Deleting Keyboard Shortcuts From Your Computer](#del-mac) for instructions on how to remove the keyboard shortcut from your Mac computer.
 
 <h2 id="Reference">Reference</h2>
 
@@ -235,7 +236,7 @@ The prepared content includes text replacement shortcuts specifically designed f
 
 <h2 id="For Teams">For Teams</h2>
 
-If you're working with a team:
+If you're working with a teams or VAs:
 
 1. Create a shared folder for your CSV files
 2. Each team member can customize their own shortcuts or use the team standards
