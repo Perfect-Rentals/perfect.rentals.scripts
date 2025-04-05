@@ -107,17 +107,20 @@ Example:
 "osq1","Hi [name]. I saw your comment on the [group] Facebook group."
 ```
 
-<h3 id="add-csv">Adding Custom Keyboard Shortcuts</h3>
-To add your own keyboard shortcuts, create a new CSV file in the `csv/` directory. You can name the file anything you like, but it is recommended to use a descriptive name that reflects the content of the shortcuts.
+<h3 id="add-csv">Bulk Add Custom Keyboard Shortcuts in CSV</h3>
+
+To add your own keyboard shortcuts, create a new CSV file in the `csv/` directory. You can name the file anything you like, but it is recommended to use a descriptive name that reflects the content of the shortcuts. Add as many as you like.
+
 For example, you could create a file called `my_custom_shortcuts.csv` and add your own shortcuts in the same format as the prepared shortcuts.
 
 ```csv
 "hw","Hello World!"
+"hmw","How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
 ```
 
-Follow the [converting CSV Keyboard Shortcuts to PLIST Format](#convert) instructions to convert your CSV files into the proper plist format for MacOS import.
+Follow the [converting CSV Keyboard Shortcuts to PLIST Format](#convert) instructions to convert your CSV files into the proper plist format for MacOS import. Next, [import the plist file](#import) into your MacOS System Settings.
 
-<h3 id="mod-csv">Modifying Keyboard Shortcuts</h3>
+<h3 id="mod-csv">Bulk Modifying Keyboard Shortcuts in CSV</h3>
 
 To modify existing keyboard shortcuts, open the CSV file in the `csv/` directory that contains the shortcut you want to change. You can use Excel, Google Sheets, or a simple text editor. Find the line with the shortcut you want to modify and change the replacement text value.
 For example, if you want to change the replacement text for the `osq1` shortcut, you would find the line that looks like this:
@@ -132,24 +135,25 @@ And change it to:
 "osq1","Hi [name]. I saw your comment on the [group] Facebook group. I would love to help you with your property."
 ```
 
-After making your changes, save the CSV file and follow the [converting CSV Keyboard Shortcuts to PLIST Format](#convert) instructions to convert your CSV files into the proper plist format for MacOS import.
+After making your changes, save the CSV file and follow the [converting CSV Keyboard Shortcuts to PLIST Format](#convert) instructions to convert your CSV files into the proper plist format for MacOS import. Next, [import the plist file](#import) into your MacOS System Settings.
 
 <h3 id="del-csv">Deleting Keyboard Shortcuts</h3>
 
 To delete keyboard shortcuts, open the CSV file in the `csv/` directory that contains the shortcut you want to delete. You can use Excel, Google Sheets, or a simple text editor. Find the line with the shortcut you want to delete and remove it from the file.
+
 For example, if you want to delete the `osq1` shortcut, you would find the line that looks like this:
 
 ```csv
 "osq1","Hi [name]. I saw your comment on the [group] Facebook group."
 ```
 
-And remove it from the file. After making your changes, save the CSV file and follow the [converting CSV Keyboard Shortcuts to PLIST Format](#convert) instructions to convert your CSV files into the proper plist format for MacOS import.
+First, remove it from the file. After saving your changes, follow the [converting CSV Keyboard Shortcuts to PLIST Format](#convert) instructions to convert your CSV files into the proper plist format for MacOS import. Next, [import the plist file](#import) into your MacOS System Settings.
 
 > Note: Deleting the shortcut in the CSV file does not remove it your Mac computer. See [Deleting Keyboard Shortcuts From Your Computer](#del-mac) for instructions on how to remove the keyboard shortcut from your Mac computer.
 
 <h3 id="convert">Converting CSV Keyboard Shortcuts to PLIST Format</h3>
 
-MacOS uses a specific PLIST format for importing and exporting text replacements. The bash script provided in this project will convert your CSV files into the correct plist format for you.
+MacOS uses a specific PLIST format for importing and exporting text replacements. The bash script provided in this project will convert all your CSV files in the [csv](./csv/) folder into the ./plist/combined.plist file for you.
 
 To convert your CSV files to plist format, follow these steps:
 
@@ -174,7 +178,7 @@ The script will:
 
 - Combine all CSV files in the `csv/` directory
 - Convert them to a plist file at `plist/combined.plist`
-- Show instructions for importing
+- Show instructions for [importing](#import) the plist file into your MacOS System Settings
 
 <h3 id="Advanced Usage">Advanced Usage</h3>
 
