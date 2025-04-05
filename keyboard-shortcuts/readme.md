@@ -8,12 +8,12 @@ This project is designed to help you save time and effort when communicating wit
 
 For Apple documentation, see [Text Replacement](https://support.apple.com/guide/mac-help/replace-text-punctuation-documents-mac-mh35735/mac).
 
-## **Quick start**
+## Quick start
 
 - Download the [MacOS shortcuts file](./plist/combined.plist) to your Mac computer
 - Drag and drop the [MacOS shortcuts file](./plist/combined.plist) into your Settings → Keyboard → Text Replacement.
 
-Instantly you have access to [44+ prepared text replacement keyboard shortcuts](./text-replacements.md).
+Instantly you have access to [44+ prepared text replacement keyboard shortcuts](./text-replacements.md). See [Customization](#customization) for instructions on how to add or modify the keyboard shortcut files.
 
 <h2 id="benefits">Key Benefits</h2>
 
@@ -36,7 +36,9 @@ When talking to seller leads, realtors, or any sales and marketing audience, you
 - When do you want to sell?
 - and so on...
 
-**Keyboard Shortcuts**. This collection of keyboard shortcuts reduces the repetitive task of typing each full question or rebuttal response to each seller. Instead, you can type the appropriate shortcut and your computer will replace the shortcut with the replacement text.
+### Keyboard Shortcuts
+
+This collection of keyboard shortcuts reduces the repetitive task of typing each full question or rebuttal response to each seller. Instead, you can type the appropriate shortcut and your computer will replace the shortcut with the replacement text.
 
 For example, for your opening script questions with a seller lead:
 
@@ -48,12 +50,20 @@ For example, for your opening script questions with a seller lead:
 
 See [Importing Prepared Text Replacements into MacOS](#import) for instructions on how to import the prepared keyboard shortcuts into your Mac computer.
 
-**Keyboard Shortcut Converter**. This repo includes a bash script to convert your own CSV files into the proper plist format for MacOS import. You can create your own keyboard shortcuts and text replacements, or modify existing ones.
+### Keyboard Shortcut Converter
+
+This repo includes a bash script to convert your own CSV files into the proper plist format for MacOS import. With this script, a text editor (or Excel or Google Sheets), you can create your own keyboard shortcuts and text replacements, or modify existing ones.
+
+You will:
 
 1. Organize your text replacements in easy-to-edit CSV files (Excel or Google Sheets)
-2. Combine multiple CSV files into a single collection of keyboard shortcuts
-3. Convert CSV shortcuts to the MacOS plist format for easy import
-4. Import them into your MacOS System Settings
+2. Save as CSV format
+
+Bash script will:
+
+1. Combine multiple CSV files into a single collection of keyboard shortcuts
+2. Convert CSV shortcuts to the MacOS plist format for easy import
+3. Import them into your MacOS System Settings
 
 See [Customization](#customization) for instructions.
 
