@@ -166,11 +166,12 @@ The script will:
 - Convert them to a plist file at `plist/combined.plist`
 - Show instructions for importing
 
-`<h2 id="Advanced Usage">`Advanced Usage `</h2>`
-You can specify specific CSV files to process:
+<h2 id="Advanced Usage">Advanced Usage</h2>
+
+You can make and specify specific CSV files to process. In bash, you can specify the CSV files to process by passing them as arguments to the script. For example, if you want to combine the `mac_default.csv` and `my-new-kbd-shortcuts.csv` files, you would run the script like this:
 
 ```bash
-./kbd-shortcuts-mac.sh ./csv/mac_default.csv ./csv/seller_objection_handlers.csv
+./kbd-shortcuts-mac.sh ./csv/mac_default.csv ./csv/my-new-kbd-shortcuts.csv
 ```
 
 <h3 id="del-mac">Deleting Keyboard Shortcuts From Your Computer</h3>
@@ -189,21 +190,21 @@ To delete keyboard shortcuts from your Mac computer, follow these steps:
 
 ### Shortcuts not appearing after import
 
-After dragging and dropping the plist file into  → System Settings → Keyboard → Text Replacement you do not see the shortcuts
+After dragging and dropping the [combined.plist](./plist/combined.plist) file into  → System Settings → Keyboard → Text Replacement you do not see the shortcuts
 
 1. Restart your applications (or entire computer) to ensure they recognize the new replacements (best solution).
 1. Check if you have too many replacements (macOS may have limits)
 
 ### Import errors
 
-After dragging and dropping the plist file into  → System Settings → Keyboard → Text Replacement you see nothing has changed or you receive an error message.
+After dragging and dropping the [combined.plist](./plist/combined.plist) file into  → System Settings → Keyboard → Text Replacement you see nothing has changed or you receive an error message.
 
 1. Ensure the plist file is valid by running the bash terminal command `plutil -lint ./plist/combined.plist`
 2. Reboot and try the drag-and-drop method again
 
 ### Duplicate Keyboard Shortcuts Exist
 
-After dragging and dropping the plist file into  → System Settings → Keyboard → Text Replacement you see duplicate keyboard shortcuts listed.
+After dragging and dropping the [combined.plist](./plist/combined.plist) file into  → System Settings → Keyboard → Text Replacement you see duplicate keyboard shortcuts.
 
 1. If you drag and drop the same shortcut value twice, it will appear twice.
 
