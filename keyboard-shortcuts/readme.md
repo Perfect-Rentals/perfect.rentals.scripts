@@ -157,7 +157,7 @@ cd keyboard-shortcuts
 chmod +x ./kbd-shortcuts-mac.sh
 
 # run the script
-./kbd-shortcuts-mac.**sh**
+./kbd-shortcuts-mac.sh
 ```
 
 The script will:
