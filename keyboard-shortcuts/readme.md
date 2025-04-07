@@ -168,10 +168,10 @@ cd path/to/project/root
 cd keyboard-shortcuts
 
 # make the script executable
-chmod +x ./kbd-shortcuts-mac.sh
+chmod +x ./convert.sh
 
 # run the script
-./kbd-shortcuts-mac.sh
+./convert.sh
 ```
 
 The script will:
@@ -180,12 +180,12 @@ The script will:
 - Convert them to a plist file at `plist/combined.plist`
 - Show instructions for [importing](#import) the plist file into your MacOS System Settings
 
-<h3 id="Advanced Usage">Advanced Usage</h3>
+<h3 id="advanced Usage">Advanced Usage</h3>
 
 You can make and specify specific CSV files to process. In bash, you can specify the CSV files to process by passing them as arguments to the script. For example, if you want to combine the `mac_default.csv` and `my-new-kbd-shortcuts.csv` files, you would run the script like this:
 
 ```bash
-./kbd-shortcuts-mac.sh ./csv/mac_default.csv ./csv/my-new-kbd-shortcuts.csv
+./convert.sh ./csv/mac_default.csv ./csv/my-new-kbd-shortcuts.csv
 ```
 
 <h3 id="del-mac">Deleting Keyboard Shortcuts From Your Computer</h3>
@@ -200,7 +200,7 @@ To delete keyboard shortcuts from your Mac computer, follow these steps:
 
 > Note: You may need to restart your applications (or entire computer) to recognize the new replacements (best solution).
 
-<h2 id="Troubleshooting">Troubleshooting</h2>
+<h2 id="troubleshooting">Troubleshooting</h2>
 
 ### Shortcuts not appearing after import
 
@@ -224,7 +224,7 @@ After dragging and dropping the [combined.plist](./plist/combined.plist) file in
 
 See [Deleting Keyboard Shortcuts From Your Computer](#del-mac) for instructions on how to remove the keyboard shortcut from your Mac computer.
 
-<h2 id="Reference">Reference</h2>
+<h2 id="reference">Reference</h2>
 
 See [Text Replacement Reference](./text-replacements.md) for a comprehensive list of all the prepared keyboard shortcuts.
 
@@ -241,7 +241,7 @@ The included shortcut categories include:
 
 The prepared content includes text replacement shortcuts specifically designed for real estate investors and agents working with seller leads. Each category contains carefully crafted responses to help you communicate professionally and efficiently.
 
-<h2 id="Notes">Notes</h2>
+<h2 id="notes">Notes</h2>
 
 - Some text replacements include placeholders like `[name]` or `[price]` that you'll need to customize after expansion
 - All shortcuts are usable across macOS, iOS, and iPadOS thanks to iCloud sync (enable in System Settings → iCloud → iCloud Drive → System Settings)
@@ -249,7 +249,7 @@ The prepared content includes text replacement shortcuts specifically designed f
 - The script is designed to be easily extensible - simply add new CSV files with your own shortcuts
 - These shortcuts work in any app where you can type text: Messages, Mail, Facebook Messenger, **Notes**, etc.
 
-<h2 id="For Teams">For Teams</h2>
+<h2 id="for-teams">For Teams</h2>
 
 If you're working with a teams or VAs:
 
